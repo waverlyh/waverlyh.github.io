@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Menu */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 4px 2px -2px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #555;
+    border-bottom: 2px solid #333;
+}
+
+/* Home Page Styles */
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('your-hero-image.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better readability */
+    color: white;
+    text-align: center;
+    padding-top: 70px; /* Offset for the fixed navbar */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .button:hover {
+    background-color: #555;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to title */
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.about-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Blog Page Styles */
+/* General Button Styles */
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 100px 20px 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.blog-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-section .intro {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.blog-buttons {
+    margin-bottom: 50px;
+}
+
+/* Most Recent Posts List */
+.blog-posts-recent {
+    margin-top: 50px;
+}
+
+.post-filters {
+    margin-bottom: 20px;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post h3 a:hover {
+    color: #555;
+    border-bottom: 2px solid #333;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* General Styles for Blog Post */
+.blog-post {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8; /* Adds space between lines for better readability */
+    font-size: 1.1rem; /* Slightly larger font for easier reading */
+}
+
+.blog-post h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-post p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+.blog-post .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Adding space below headings */
+.blog-post h2, .blog-post h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
